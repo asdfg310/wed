@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './CalculadoraFiscal.css';
 
 const CalculadoraFiscal = () => {
     const [ingreso, setIngreso] = useState('');
@@ -10,16 +11,19 @@ const CalculadoraFiscal = () => {
     };
 
     return (
-        <div>
-            <h2>Calculadora Fiscal</h2>
+        <div className="calculadora-container">
+            <h2 className="calculadora-title">Calculadora Fiscal</h2>
             <input
                 type="number"
                 value={ingreso}
                 onChange={(e) => setIngreso(e.target.value)}
                 placeholder="Ingrese sus ingresos"
+                className="calculadora-input"
             />
-            <button onClick={calcularImpuestos}>Calcular</button>
-            {resultado !== null && <p>Impuestos: ${resultado}</p>}
+            <button onClick={calcularImpuestos} className="calculadora-button">
+                Calcular
+            </button>
+            {resultado !== null && <p className="calculadora-result">Impuestos: ${resultado}</p>}
         </div>
     );
 };

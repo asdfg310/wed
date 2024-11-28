@@ -1,42 +1,58 @@
-/* Estilo general del navbar */
+/* Estilo general del Navbar */
 .custom-navbar {
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3); /* Añade sombra para dar profundidad */
-    background-color: #004aad !important; /* Azul profesional */
+  background-color: #343a40; /* Color oscuro */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  z-index: 1030; /* Asegura que el Navbar esté por encima de otros elementos */
+}
+
+/* Logo del Navbar */
+.navbar-logo {
+  height: 40px; /* Tamaño del logo */
+  width: auto;
+}
+
+/* Nombre de la marca */
+.navbar-brand-name {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand-name:hover {
+  color: #0085eb; /* Color dorado en hover */
+}
+
+/* Estilo de los enlaces */
+.custom-navbar .nav-link-custom {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link-custom:hover {
+  color: #0085eb; /* Color dorado */
+}
+
+/* Estilo del botón colapsable */
+.custom-navbar .navbar-toggler {
+  border-color: #ffffff; /* Borde blanco */
+}
+
+.custom-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Ajustes responsivos */
+@media (max-width: 992px) {
+  .custom-navbar .nav-link-custom {
+      text-align: center;
+      padding: 10px 0;
+      font-size: 1rem;
   }
-  
-  /* Estilo para el logo */
-  .navbar-logo {
-    width: 40px; /* Tamaño del logo */
-    margin-right: 10px;
-    vertical-align: middle; /* Alinea el logo con el texto */
-  }
-  
-  /* Estilo para el texto de la marca */
+
   .navbar-brand-name {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: white;
+      font-size: 1rem; /* Tamaño más pequeño en pantallas pequeñas */
   }
-  
-  /* Estilo de los enlaces de navegación */
-  .nav-link-custom {
-    color: white !important;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-link-custom:hover {
-    color: #f5a623 !important; /* Naranja profesional al hacer hover */
-  }
-  
-  /* Responsividad */
-  @media (max-width: 768px) {
-    .navbar-logo {
-      width: 30px; /* Reducimos el tamaño del logo en pantallas pequeñas */
-    }
-  
-    .navbar-brand-name {
-      font-size: 1rem; /* Ajustamos el tamaño del texto */
-    }
-  }
-  
+}

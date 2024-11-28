@@ -1,131 +1,150 @@
-/* Estilos generales */
+/* Variables globales */
+:root {
+  --primary-color: #333; /* Color principal */
+  --secondary-color: #f4f4f9; /* Fondo secundario */
+  --highlight-color: #004aad; /* Color destacado */
+  --background-color: #ffffff; /* Fondo general */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Sombra general */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Variables para tamaños */
+  --primary-font-size: 16px;
+  --heading-margin: 20px;
+  --button-padding: 10px 20px;
+}
+
+/* Reset y estilos básicos */
+* {
+  box-sizing: border-box;
+}
+
 body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  line-height: 1.6;
+  padding-top: 66px; /* Margen superior para ajustar el Navbar */
+  margin: 66; /* Asegura que no haya márgenes innecesarios */
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, a {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-
-.App {
-  text-align: center;
-}
-
-h1 {
-  color: #333;
-}
-
-/* Estilos para encabezados y secciones principales */
-.App-header {
-  background-color: #282c34;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-/* Estilos para listas */
-ul {
-  list-style-type: none;
   padding: 0;
 }
 
-li {
-  background: #f9f9f9;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Clases genéricas */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 50px 20px;
+  background-color: var(--secondary-color);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.button {
+  background-color: var(--highlight-color);
+  color: #fff;
+  border: none;
+  padding: var(--button-padding);
   border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Nuevos estilos añadidos */
-.hero-section {
-  background-color: #f4f4f9;
-  padding: 50px 0;
+.button:hover {
+  background-color: #003377;
 }
 
-.hero-image {
-  max-width: 100%;
-  height: auto;
-  margin-top: 20px;
+.button-secondary {
+  background-color: #ccc;
+  color: var(--primary-color);
+  border: none;
+  padding: var(--button-padding);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-/* Estilos para la vista general de servicios */
-.services-overview {
-  padding: 40px;
-  background-color: #ffffff;
+.button-secondary:hover {
+  background-color: #aaa;
 }
 
-.service-cards {
-  display: flex;
-  justify-content: space-around;
-}
-
-.service-card {
-  background: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  width: 30%;
+/* Estilos para encabezados */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
   text-align: center;
+  color: var(--highlight-color);
+  margin-bottom: var(--heading-margin);
 }
 
-/* Estilos para testimonios */
-.testimonials {
-  padding: 50px;
-  background-color: #f1f1f1;
-  text-align: center;
-}
-
-.testimonials h2 {
-  margin-bottom: 20px;
-}
-
-.testimonials p {
-  font-style: italic;
-}
-
-/* Estilos para el carrusel de imágenes */
-.carousel {
-  height: 75vh; /* Ajusta este valor según el tamaño que deseas para el carrusel */
-}
-
-.carousel-item img {
-  width: 100%;
-  height: 75vh; /* Cambia este valor para ajustar la altura de las imágenes del carrusel */
-  object-fit: cover; /* Asegura que las imágenes mantengan la proporción */
-}
-
-.carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para el texto del carrusel */
-  padding: 30px;
-  border-radius: 10px;
-}
-
-.carousel-caption h3 {
-  color: white;
+h2 {
   font-size: 2rem;
   font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: var(--heading-margin);
 }
 
-.carousel-caption p {
-  color: white;
-  font-size: 1.2rem;
+h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: var(--heading-margin);
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Estilo para enlaces */
+a:hover {
+  color: var(--highlight-color);
+  text-decoration: underline;
 }
 
 /* Ajustes responsivos */
 @media (max-width: 768px) {
-  .carousel-item img {
-    height: 70vh; /* Ajusta la altura para pantallas pequeñas */
+  body {
+    padding-top: 60px; /* Ajusta el padding superior en pantallas pequeñas */
   }
 
-  .service-cards {
-    flex-direction: column; /* Las tarjetas de servicio se alinearán en una columna en pantallas pequeñas */
-    align-items: center;
+  .container {
+    padding: 0 10px;
   }
 
-  .service-card {
-    width: 80%; /* Ajusta el ancho de las tarjetas de servicio en pantallas pequeñas */
-    margin-bottom: 20px;
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
   }
 }
+
+/* Eliminación de márgenes adicionales */
+.carousel {
+  margin-top: 0; /* Asegura que no haya margen entre el carrusel y el Navbar */
+}
+

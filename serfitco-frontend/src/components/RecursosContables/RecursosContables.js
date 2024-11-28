@@ -13,7 +13,6 @@ const RecursosContables = () => {
 
             {/* Sección de la Calculadora Fiscal */}
             <div className="recurso-item">
-                <h2>Calculadora Fiscal</h2>
                 <CalculadoraFiscal />
             </div>
 
