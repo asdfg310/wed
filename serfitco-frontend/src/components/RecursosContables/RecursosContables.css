@@ -1,0 +1,36 @@
+.recursos-container {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.recursos-container h1 {
+    font-size: 2.5rem;
+    color: #004aad;
+    margin-bottom: 20px;
+}
+
+.recursos-seccion {
+    margin-top: 30px;
+}
+
+.recursos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.recurso-item {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.recurso-item:hover {
+    transform: scale(1.05);
+}

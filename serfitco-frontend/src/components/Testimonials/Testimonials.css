@@ -1,0 +1,70 @@
+/* Contenedor principal de la sección */
+.testimonials {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #eef4fc, #ffffff); /* Fondo degradado */
+    text-align: center;
+}
+
+/* Título principal */
+.testimonials-title {
+    font-size: 2.5rem;
+    color: #004aad;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Contenedor de las tarjetas */
+.testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Tarjetas individuales */
+.testimonial-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animación de hover */
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Cita */
+.testimonial-quote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+/* Icono de comillas estilizado */
+.testimonial-quote::before {
+    content: "“";
+    font-size: 2rem;
+    color: #004aad;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Autor */
+.testimonial-author {
+    font-size: 1rem;
+    color: #555;
+    font-weight: bold;
+    text-align: right;
+}

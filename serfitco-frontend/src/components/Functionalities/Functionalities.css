@@ -1,0 +1,74 @@
+/* Contenedor principal */
+.functionalities-container {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f9f9f9, #eef4fc); /* Fondo suave */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Título principal */
+.functionalities-container h1 {
+    font-size: 2rem;
+    color: #004aad; /* Azul profesional */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Lista de funcionalidades */
+.functionalities-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 800px; /* Limita el ancho */
+}
+
+/* Estilo para cada funcionalidad */
+.functionalities-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover efecto */
+.functionalities-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Título de cada funcionalidad */
+.functionalities-list h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Descripción */
+.functionalities-list p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .functionalities-container {
+        padding: 20px;
+    }
+    .functionalities-list li {
+        padding: 15px;
+    }
+    .functionalities-list h2 {
+        font-size: 1.2rem;
+    }
+    .functionalities-list p {
+        font-size: 0.9rem;
+    }
+}

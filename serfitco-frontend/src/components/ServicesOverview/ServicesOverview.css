@@ -1,0 +1,84 @@
+/* Contenedor principal de la sección */
+.services-overview {
+  padding: 60px 20px;
+  background: linear-gradient(90deg, #f0f4f8, #e8ecf3); /* Degradado suave */
+  text-align: center;
+}
+
+/* Título principal */
+.services-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #004aad; /* Azul profesional */
+  margin-bottom: 20px;
+}
+
+/* Descripción debajo del título */
+.services-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Contenedor de las tarjetas */
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Tarjetas individuales */
+.service-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Efectos al pasar el ratón */
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color: #f5faff; /* Cambia el fondo al pasar el mouse */
+}
+
+/* Icono de cada servicio */
+.service-icon {
+  font-size: 3rem; /* Tamaño del icono */
+  color: #004aad; /* Color del icono */
+  margin-bottom: 10px; /* Espaciado inferior */
+  display: flex; /* Asegura la alineación centrada */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 60px; /* Altura específica para el icono */
+}
+
+/* Efecto en el icono al pasar el ratón */
+.service-card:hover .service-icon {
+  transform: scale(1.2);
+}
+
+/* Título de cada tarjeta */
+.service-card h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* Descripción de cada tarjeta */
+.service-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
