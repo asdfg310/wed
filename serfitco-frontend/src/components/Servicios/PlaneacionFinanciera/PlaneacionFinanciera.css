@@ -1,0 +1,19 @@
+.planeacion-page {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.planeacion-page h1 {
+    color: #17a2b8;
+}
+
+.planeacion-page ul {
+    list-style: square;
+    margin-left: 20px;
+}
+
+.planeacion-page p {
+    font-size: 1.1rem;
+}

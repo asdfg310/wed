@@ -6,6 +6,7 @@ from .models import FuncionalidadExtra
 class ServicioContableAdmin(admin.ModelAdmin):
     list_display = ('nombre', 'precio', 'fecha_creacion')
     search_fields = ('nombre', 'descripcion')
+    
 
 
 admin.site.register(FuncionalidadExtra)    

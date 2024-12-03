@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom"; // Importamos Link para rutas internas
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -46,13 +47,19 @@ const Footer = () => {
             <h5>Enlaces</h5>
             <ul className="list-unstyled">
               <li>
-                <a href="/privacidad">Política de Privacidad</a>
+                <Link to="/politica-privacidad" className="footer-link">
+                  Política de Privacidad
+                </Link>
               </li>
               <li>
-                <a href="/terminos">Términos y Condiciones</a>
+                <Link to="/terminos" className="footer-link">
+                  Términos y Condiciones
+                </Link>
               </li>
               <li>
-                <a href="/contacto">Contáctanos</a>
+                <Link to="/contacto" className="footer-link">
+                  Contáctanos
+                </Link>
               </li>
             </ul>
           </Col>

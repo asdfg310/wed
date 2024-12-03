@@ -22,6 +22,7 @@ const NavigationBar = () => {
                     <Nav className="ms-auto">
                         <Nav.Link href="/" className="nav-link-custom" title="Ir a Inicio">Inicio</Nav.Link>
                         <Nav.Link href="/servicios" className="nav-link-custom" title="Ver Servicios">Servicios</Nav.Link>
+                        <Nav.Link href="/recursos-contables" className="nav-link-custom" title="Ver Recursos">Recursos Contables</Nav.Link>
                         <Nav.Link href="/contacto" className="nav-link-custom" title="Contáctanos">Contáctanos</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>

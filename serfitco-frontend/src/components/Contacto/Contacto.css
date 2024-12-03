@@ -1,0 +1,74 @@
+/* Estilo general del contenedor */
+.container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Título principal */
+h2 {
+    font-size: 2rem;
+    color: #004aad; /* Azul corporativo */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Texto descriptivo */
+p {
+    text-align: center;
+    color: #555; /* Gris suave */
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+/* Estilo de los inputs */
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #004aad; /* Azul corporativo */
+    box-shadow: 0 0 5px rgba(0, 74, 173, 0.5); /* Resalta al hacer foco */
+}
+
+/* Estilo del botón */
+.btn-primary {
+    background-color: #004aad; /* Azul corporativo */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #003a8c; /* Azul más oscuro */
+}
+
+/* Espaciado entre columnas */
+.row .col-md-6 {
+    margin-bottom: 20px;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}

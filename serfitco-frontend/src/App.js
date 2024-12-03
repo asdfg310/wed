@@ -6,10 +6,26 @@ import Footer from './components/Footer/Footer';
 import CarouselHome from './components/CarouselHome/CarouselHome';
 import ServicesOverview from './components/ServicesOverview/ServicesOverview';
 import Testimonials from './components/Testimonials/Testimonials';
-import Contacto from './components/Contacto';
+import Contacto from './components/Contacto/Contacto';
+import CalculadoraFiscal from './components/Herramientas/CalculadoraFiscal/CalculadoraFiscal';
+import SimuladorNomina from './components/Herramientas/SimuladorNomina/SimuladorNomina';
+import NormativasActualizadas from './components/Herramientas/NormativasActualizadas/NormativasActualizadas';
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
+import Impuestos from './components/Servicios/Impuestos/Impuestos';
+import AuditoriasFinancieras from './components/Servicios/AuditoriasFinancieras/AuditoriasFinancieras';
+import GestionNominas from './components/Servicios/GestionNominas/GestionNominas';
+import PlaneacionFinanciera from './components/Servicios/PlaneacionFinanciera/PlaneacionFinanciera';
+import PoliticaPrivacidad from './components/PoliticaPrivacidad/PoliticaPrivacidad';
+import Terminos from './components/Terminos/Terminos';
+
+
+
+
+
+
+
 
 const App = () => {
     return (
@@ -41,6 +57,22 @@ const App = () => {
 
                     {/* Ruta para la página de contacto */}
                     <Route path="/contacto" element={<Contacto />} />
+
+                    {/* Rutas para herramientas útiles */}
+                    <Route path="/herramientas/calculadora-fiscal" element={<CalculadoraFiscal />} />
+                    <Route path="/herramientas/simulador-nomina" element={<SimuladorNomina />} />
+                    <Route path="/herramientas/normativas-actualizadas" element={<NormativasActualizadas />} />
+                    <Route path="/servicios/impuestos" element={<Impuestos />} />
+                    <Route path="/servicios/auditorias" element={<AuditoriasFinancieras />} />
+                    <Route path="/servicios/nominas" element={<GestionNominas />} />
+                    <Route path="/servicios/planeacion" element={<PlaneacionFinanciera />} />
+                    <Route path="/politica-privacidad" element={<PoliticaPrivacidad />} />
+                    <Route path="/terminos" element={<Terminos />} />
+
+
+
+
+
                 </Routes>
             </Container>
 

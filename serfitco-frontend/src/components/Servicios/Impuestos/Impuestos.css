@@ -1,0 +1,18 @@
+.impuestos-page {
+    color: #333;
+    line-height: 1.6;
+}
+
+.impuestos-page h1 {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.impuestos-page ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.impuestos-page ul li {
+    margin-bottom: 10px;
+}

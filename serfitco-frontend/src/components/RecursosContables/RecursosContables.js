@@ -1,7 +1,8 @@
 import React from 'react';
 import './RecursosContables.css'; // Estilos específicos para la sección
-import CalculadoraFiscal from '../CalculadoraFiscal/CalculadoraFiscal';
+import CalculadoraFiscal from '../Herramientas/CalculadoraFiscal/CalculadoraFiscal';
 import Functionalities from '../Functionalities/Functionalities';
+import { Link } from 'react-router-dom';
 
 const RecursosContables = () => {
     return (
@@ -20,9 +21,9 @@ const RecursosContables = () => {
             <div className="recursos-seccion">
                 <h2 className="recursos-subtitle">Herramientas Útiles</h2>
                 <div className="recursos-grid">
-                    <div className="recurso-item">Calculadora Fiscal</div>
-                    <div className="recurso-item">Simulador de Nómina</div>
-                    <div className="recurso-item">Normativas Actualizadas</div>
+                    <Link to="/herramientas/calculadora-fiscal" className="recurso-item">Calculadora Fiscal</Link>
+                    <Link to="/herramientas/simulador-nomina" className="recurso-item">Simulador de Nómina</Link>
+                    <Link to="/herramientas/normativas-actualizadas" className="recurso-item">Normativas Actualizadas</Link>
                 </div>
             </div>
 

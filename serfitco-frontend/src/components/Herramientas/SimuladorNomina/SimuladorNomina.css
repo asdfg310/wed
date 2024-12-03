@@ -1,0 +1,62 @@
+.simulador-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.simulador-title {
+    font-size: 1.8rem;
+    color: #004aad;
+    margin-bottom: 15px;
+}
+
+.simulador-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.simulador-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.simulador-form label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.simulador-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.simulador-button {
+    background-color: #004aad;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.simulador-button:hover {
+    background-color: #003a8c;
+}
+
+.simulador-result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #004aad;
+    font-weight: bold;
+}

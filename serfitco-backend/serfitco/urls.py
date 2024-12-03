@@ -17,10 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from .views import FuncionalidadExtraList, ServicioContableList, ServicioContableDetail
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/servicios/', ServicioContableList.as_view(), name='servicios-list'),
     path('api/servicios/<int:pk>/', ServicioContableDetail.as_view(), name='servicio-detail'),
     path('api/funcionalidades/', FuncionalidadExtraList.as_view(), name='funcionalidades-list'),
+    path('api/contacto/', include('contacto.urls')),
 ]
