@@ -9,3 +9,8 @@ build/
 # Configuración del sistema
 .env
 .DS_Store
+
+venv/
+db.sqlite3
+
+__pycache__/

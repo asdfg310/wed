@@ -26,9 +26,9 @@ const PoliticaPrivacidad = () => {
                 Implementamos medidas de seguridad avanzadas para garantizar que su información esté protegida contra accesos no autorizados.
             </p>
             <h2>Contacto</h2>
-            <p>
-                Si tiene preguntas sobre nuestra política de privacidad, puede contactarnos en <strong>correo@serfitco.com</strong>.
-            </p>
+            <p className="text-center mt-5">
+            Si tienes preguntas sobre estas politicas, no dudes en contactarnos a través de nuestra página de <a href="/contacto">Contacto</a>.
+          </p>
         </div>
     );
 };
