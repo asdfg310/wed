@@ -1,16 +1,24 @@
-# Dependencias de Node.js
-node_modules/
-.cache/
-
-# Archivos de compilación
-dist/
-build/
+# Archivos de Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
 
 # Configuración del sistema
-.env
+*.log
+*.env
 .DS_Store
-
-venv/
 db.sqlite3
 
-__pycache__/
+# Archivos de Node.js / React
+node_modules/
+.cache/
+build/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Entornos virtuales
+venv/
+env/
